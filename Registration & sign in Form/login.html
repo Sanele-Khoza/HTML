@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign In</title>
+  <link rel="stylesheet" href="stylelogin.css">
+</head>
+<body>
+  <header>
+    <h2 class="logo">SCOB000</h2>
+    <nav class="navigation">
+      <a href="#">Home</a>
+      <a href="#">Theory</a>
+      <a href="#">C++</a>
+      <a href="profile.php">Profile</a>
+      <button class="btnLogin-popup"><a href="index.html">Sign Up</a></button>
+    </nav>
+  </header>
+
+  <div class="wrapper">
+
+    <div class="form-box register">
+      <h2 >Sign In</h2>
+      <form method="post" action="login.php">
+
+        <div class="input-box">
+           <span class="icon">
+            <ion-icon name="mail"></ion-icon>
+          </span>
+          <input type="email" name="email" id="email" placeholder="Email" required>
+          <label for="email">Email</label>
+        </div>
+
+        <div class="input-box">
+          <span class="icon">
+            <ion-icon name="lock-closed"></ion-icon>
+            </span>
+            <input type="password" name="password" id="password" placeholder="Password" required>
+            <label for="password">Password</label>
+       </div>
+
+       <div class="remember-forgot">
+        <label >
+          <input type="checkbox">Agree to T&Cs
+          <a href="#">Forgot Password?</a>
+        </label>
+        
+       </div>
+       <input type="submit" class="btn" value="Sign In" name="signIn">
+       <div class="login-register">
+        <p>
+          Don't have an account? <a href="index.html" class="login-link">Sign up</a>
+        </p>
+       </div>
+      </form>
+    </div>
+  </div>
+
+
+  <script src="script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

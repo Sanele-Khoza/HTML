@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h2 class="logo">SCOB000</h2>
+    <nav class="navigation">
+      <a href="#">Home</a>
+      <a href="#">Theory</a>
+      <a href="#">C++</a>
+      <a href="profile.php">Profile</a>
+      <button class="btnLogin-popup"><a href="login.html">Login</a></button>
+    </nav>
+  </header>
+
+  <div class="wrapper">
+
+    <div class="form-box register">
+      <h2 >Registration</h2>
+      <form method="post" action="index.php">
+
+        <div class="input-box">
+          <span class="icon">
+            <ion-icon name="person"></ion-icon>
+         </span>
+         <input type="text" name="name" id="name" placeholder="Name" required>
+         <label for="name">Name</label>
+       </div>
+
+          <div class="input-box">
+            <span class="icon">
+              <ion-icon name="person"></ion-icon>
+          </span>
+          <input type="text" name="surname" id="surname" placeholder="Surname" required>
+          <label for="surname">Surname</label>
+        </div>
+
+        <div class="input-box">
+          <span class="icon">
+            <ion-icon name="card"></ion-icon>
+        </span>
+        <input type="text" name="student_no" id="student_no" placeholder="Student Number" required>
+        <label for="student_no">Student Number</label>
+      </div>
+
+      <div class="input-box">
+        <span class="icon">
+          <ion-icon name="call"></ion-icon>
+      </span>
+      <input type="text" name="contact" id="contact" placeholder="Contact" required>
+      <label for="contact">Contact</label>
+    </div>
+
+    <div class="input-box">
+      <span class="icon">
+        <ion-icon name="book"></ion-icon>
+    </span>
+    <input type="text" name="module_code" id="module_code" placeholder="Module Code" required>
+    <label for="module_code">Module Code</label>
+  </div>
+
+        <div class="input-box">
+           <span class="icon">
+            <ion-icon name="mail"></ion-icon>
+          </span>
+          <input type="email" name="email" id="email" placeholder="Email" required>
+          <label for="email">Email</label>
+        </div>
+
+        <div class="input-box">
+          <span class="icon">
+            <ion-icon name="lock-closed"></ion-icon>
+            </span>
+            <input type="password" name="password" id="password" placeholder="Password" required>
+            <label for="password">Password</label>
+       </div>
+
+       <div class="input-box">
+        <span class="icon">
+          <ion-icon name="lock-closed"></ion-icon>
+        </span>
+        <input type="password" name="confirm_password" id="confirm_password" placeholder="Confirm Password" required>
+        <label for="confirm_password">Confirm Password</label>
+     </div>
+
+       <div class="remember-forgot">
+        <label for="#">
+          <input type="checkbox">Agree to T&Cs
+        </label>
+        
+       </div>
+       <button type="submit" class="btn" name="register">Register</button>
+       <div class="login-register">
+        <p>
+          Already have an account? <a href="login.html" class="login-link">Login</a>
+        </p>
+       </div>
+      </form>
+    </div>
+  </div>
+
+
+  <script src="script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
